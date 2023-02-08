@@ -1,5 +1,5 @@
 
-![react](https://user-images.githubusercontent.com/115448369/217462313-c693d501-29f8-4e45-ac68-d19e953b2954.svg)
+<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
 
 
 # Getting Started with Create React App
