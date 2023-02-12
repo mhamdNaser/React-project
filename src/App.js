@@ -1,6 +1,8 @@
 import Header from './comp/Header';
 import Main from './comp/Main';
 import Footer from './comp/Footer';
+import StateExam from './comp/StateExam';
+import Calculator from './comp/calculater';
 
 function App() {
   const message = [
@@ -23,6 +25,8 @@ function App() {
   return (
     <div>
         <Header/>
+        <Calculator />
+        <StateExam />
         <Main message={message} />
         <Footer />
     </div>

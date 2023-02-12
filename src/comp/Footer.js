@@ -4,7 +4,7 @@ import React from "react";
 class Footer extends React.Component{
     render(){
         return(
-            <div className="fixed-bottom">
+            <div>
                 <footer className="text-center text-lg-start bg-light text-dark">
                     <div className="row p-5 justify-content-center g-2">
                         <div className="col-lg-5 col-md-12 mb-4 mb-md-0 border-end ms-2 me-2">

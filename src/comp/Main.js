@@ -1,5 +1,4 @@
 import React from "react"
-import  CardImg  from "react-bootstrap/Image";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -8,10 +7,10 @@ class Main extends React.Component{
     render(){
         console.log(this.props.message);
         return(
-            <div>
+            <div className="row vh-75 p-5 m-3 justify-content-center">
             {this.props.message.map(el => (
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={el.bookImage} alt="nnj" />
+                <Card className="col-lg-3 ms-5 me-5" style={{ width: '20rem' }}>
+                    <Card.Img variant="top" src={el.bookImage} alt="nnj" style={{ height: '180px'}} />
                     <Card.Body>
                         <Card.Title>{el.Title}</Card.Title>
                         <Card.Text>{el.author}</Card.Text>
