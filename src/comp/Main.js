@@ -7,7 +7,7 @@ class Main extends React.Component{
     render(){
         console.log(this.props.message);
         return(
-            <div className="row vh-75 p-5 m-3 justify-content-center">
+            <div className="row vh-75 p-5 m-5 justify-content-center">
             {this.props.message.map(el => (
                 <Card className="col-lg-3 ms-5 me-5" style={{ width: '20rem' }}>
                     <Card.Img variant="top" src={el.bookImage} alt="nnj" style={{ height: '180px'}} />

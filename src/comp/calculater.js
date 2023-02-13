@@ -30,7 +30,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className='row p-5 m-3 justify-content-center'>
+    <div className='row p-5 m-3 justify-content-center m-5'>
         <div className="col-lg-6  border border-3 border-success p-5">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-lg-6 g-2">

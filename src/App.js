@@ -1,8 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './comp/Header';
 import Main from './comp/Main';
 import Footer from './comp/Footer';
 import StateExam from './comp/StateExam';
 import Calculator from './comp/calculater';
+import RegisterForm from './comp/register';
+import LoginForm from './comp/login';
+import Todo from "./comp/Todo";
+
 
 function App() {
   const message = [
@@ -24,10 +29,17 @@ function App() {
 
   return (
     <div>
-        <Header/>
-        <Calculator />
-        <StateExam />
-        <Main message={message} />
+        <Header />
+        <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<Main message={message} />} />
+              <Route path="/Todo" element={<Todo />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/register" element={<RegisterForm />} />
+              <Route path="calculater" element={<Calculator />} />
+              <Route path="/StateExam" element={<StateExam />} />
+          </Routes>
+        </BrowserRouter>
         <Footer />
     </div>
   );
